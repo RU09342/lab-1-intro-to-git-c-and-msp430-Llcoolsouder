@@ -6,6 +6,7 @@ int math(int num1, int num2, char Operator) {
         case('-') : return num1 - num2;
         case('*') : return num1 * num2;
         case('/') : return num1 / num2;
-        default : return 0;
+		case('%') : return num1 % num2;
+        default : return -32768; //0xffff
     }
 }
